@@ -5,4 +5,5 @@ CMakeFiles/Project.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/Project.dir/src/main.cpp.o: ../src/models/Immigrant.h
 
 CMakeFiles/Project.dir/src/models/Immigrant.cpp.o: ../src/models/Immigrant.cpp
+CMakeFiles/Project.dir/src/models/Immigrant.cpp.o: ../src/models/Immigrant.h
 

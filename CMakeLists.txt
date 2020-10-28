@@ -21,3 +21,4 @@ add_subdirectory(libraries/MyLibrary)
 
 # Link the executable and the library together
 target_link_libraries(Project MyLibrary)
+

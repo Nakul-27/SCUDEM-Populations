@@ -2,6 +2,11 @@ clang++
 
 %cpp -std=c++14
 %cpp -stdlib=stdlibc++
-%cpp -/usr/local/stdc++.h
+%cpp -isysroot/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+
 %h -x
 %h c++-header
+
+-DCMAKE_CXX_COMPILER=clang++-mp-6.0
+-DCMAKE_PREFIX_PATH=/opt/local/libexec/llvm-6.0
+
