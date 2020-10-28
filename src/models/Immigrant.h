@@ -1,5 +1,5 @@
 //
-// Immigrant Class HELPER
+// Immigrant Class Interface
 // By: RAO, Nakul S
 // Date of Last Edit: 28 OCT 2020
 //
@@ -12,13 +12,29 @@
 using std::string;
 class Immigrant {
  public:
-  Immigrant(std::string method, std::string gender, std ::string socialClass,
-            int age, double interactionProb);
-  string getMethod();
-  string getGender();
-  string getSocialClass();
-  int getAge();
-  double getInteractionProb();
+  // Get Methods
+  string getMethod(void);
+  string getGender(void);
+  string getSocialClass(void);
+  int getAge(void);
+  double getInteractionProb(void);
+
+  // Set Methods
+  void setMethod(std::string method);
+  void setGender(std::string gender);
+  void setSocialClass(std::string socialClass);
+  void setAge(int age);
+  void setInteractionProb(double interactionProb);
+
+  //   // Non-Default Constructor
+  //   Immigrant(std::string method, std::string gender, std ::string
+  //   socialClass,
+  //             int age, double interactionProb);
+
+  Immigrant();
+  ~Immigrant();
+
+  void Display(void);
 
  private:
   std::string method;

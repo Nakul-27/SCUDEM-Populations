@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/main.cpp
-stdio.h
--
-models/Immigrant.h
-/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.h
-
 /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.cpp
 Immigrant.h
 /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.h
+iostream
+-
 
 /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.h
 string
