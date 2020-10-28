@@ -1,6 +1,7 @@
-clang
+clang++
 
-# add this to support `.h` files as C++ headers
+%cpp -std=c++14
+%cpp -stdlib=stdlibc++
+%cpp -/usr/local/stdc++.h
 %h -x
 %h c++-header
-

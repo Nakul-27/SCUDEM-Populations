@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/libraries/MyLibrary/src/MyLibrary.cpp
+

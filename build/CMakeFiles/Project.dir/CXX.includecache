@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/main.cpp
+stdio.h
+-
+models/Immigrant.h
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.h
+
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.h
+string
+-
+
