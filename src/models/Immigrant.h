@@ -26,12 +26,11 @@ class Immigrant {
   void setAge(int age);
   void setInteractionProb(double interactionProb);
 
-  //   // Non-Default Constructor
-  //   Immigrant(std::string method, std::string gender, std ::string
-  //   socialClass,
-  //             int age, double interactionProb);
+  // Non-Default Constructor
+  Immigrant(std::string method, std::string gender, std::string socialClass,
+            int age, double interactionProb);
 
-  Immigrant();
+  // Immigrant();
   ~Immigrant();
 
   void Display(void);

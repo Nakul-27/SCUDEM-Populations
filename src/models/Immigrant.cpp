@@ -29,10 +29,10 @@ void Immigrant::setInteractionProb(double nInteractionProb) {
 }
 
 // Constructor
-Immigrant::Immigrant(void){};
+// Immigrant::Immigrant(void){};
 // Destructor
-Immigrant::~Immigrant(void) {
-  std::cout << "Immigrant Object being deleted" << std::endl;
+Immigrant::~Immigrant(void){
+    // std::cout << "Immigrant Object being deleted" << std::endl;
 };
 
 void Immigrant::Display() {
@@ -44,13 +44,13 @@ void Immigrant::Display() {
   std::cout << "Interaction Probability: " << interactionProb << std::endl;
 }
 
-// // Constructor
-// Immigrant::Immigrant(std::string method, std::string gender,
-//                      std ::string socialClass, int age,
-//                      double interactionProb) {
-//   method = method;
-//   gender = gender;
-//   age = age;
-//   socialClass = socialClass;
-//   interactionProb = interactionProb;
-// }
+// Constructor
+Immigrant::Immigrant(std::string newMethod, std::string newGender,
+                     std ::string newSocialClass, int newAge,
+                     double newInteractionProb) {
+  method = newMethod;
+  gender = newGender;
+  age = newAge;
+  socialClass = newSocialClass;
+  interactionProb = newInteractionProb;
+}
