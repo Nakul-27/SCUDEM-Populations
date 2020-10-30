@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o"
   "CMakeFiles/Project.dir/src/main.cpp.o"
   "CMakeFiles/Project.dir/src/models/Immigrant.cpp.o"
   "Project"

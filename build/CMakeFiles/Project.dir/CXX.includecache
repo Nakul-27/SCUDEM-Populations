@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/main.cpp
-stdio.h
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/ImmigrantGenerator.cpp
+ImmigrantGenerator.h
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/ImmigrantGenerator.h
+cstdlib
 -
+../models/Immigrant.h
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.h
+../templates/rng.cpp
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/templates/rng.cpp
+
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/ImmigrantGenerator.h
 iostream
 -
 iterator
@@ -17,10 +25,16 @@ string
 -
 vector
 -
-models/Immigrant.h
+../models/Immigrant.h
 /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.h
 
 /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.h
 string
+-
+
+/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/templates/rng.cpp
+string.h
+-
+cstring
 -
 

@@ -17,18 +17,18 @@ class Immigrant {
   string getGender(void);
   string getSocialClass(void);
   int getAge(void);
-  double getInteractionProb(void);
+  float getInteractionProb(void);
 
   // Set Methods
   void setMethod(std::string method);
   void setGender(std::string gender);
   void setSocialClass(std::string socialClass);
   void setAge(int age);
-  void setInteractionProb(double interactionProb);
+  void setInteractionProb(float interactionProb);
 
   // Non-Default Constructor
   Immigrant(std::string method, std::string gender, std::string socialClass,
-            int age, double interactionProb);
+            int age, float interactionProb);
 
   // Immigrant();
   ~Immigrant();
@@ -40,6 +40,6 @@ class Immigrant {
   std::string gender;
   std::string socialClass;
   int age;
-  double interactionProb;
+  float interactionProb;
 };
 #endif /* ifndef IMMIGRANT_H */

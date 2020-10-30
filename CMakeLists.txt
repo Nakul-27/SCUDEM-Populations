@@ -7,12 +7,14 @@ project(Project)
 # Create a few variables for the folder names, so they are easier to rename in
 # the future
 set(MODELS_DIR src/models)
+set(GENERATOR_DIR src/generators)
 
 # Add all the source files needed to build the executable
 add_executable(
   Project
   src/main.cpp
   ${MODELS_DIR}/Immigrant.cpp
+  ${GENERATOR_DIR}/ImmigrantGenerator.cpp
 )
 
 # Include the directory where MyLibrary project is. Otherwise, we can't use the

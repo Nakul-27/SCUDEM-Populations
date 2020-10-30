@@ -136,6 +136,33 @@ MyLibrary/fast:
 	$(MAKE) -f libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build.make libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build
 .PHONY : MyLibrary/fast
 
+src/generators/ImmigrantGenerator.o: src/generators/ImmigrantGenerator.cpp.o
+
+.PHONY : src/generators/ImmigrantGenerator.o
+
+# target to build an object file
+src/generators/ImmigrantGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o
+.PHONY : src/generators/ImmigrantGenerator.cpp.o
+
+src/generators/ImmigrantGenerator.i: src/generators/ImmigrantGenerator.cpp.i
+
+.PHONY : src/generators/ImmigrantGenerator.i
+
+# target to preprocess a source file
+src/generators/ImmigrantGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.i
+.PHONY : src/generators/ImmigrantGenerator.cpp.i
+
+src/generators/ImmigrantGenerator.s: src/generators/ImmigrantGenerator.cpp.s
+
+.PHONY : src/generators/ImmigrantGenerator.s
+
+# target to generate assembly for a file
+src/generators/ImmigrantGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.s
+.PHONY : src/generators/ImmigrantGenerator.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -200,6 +227,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... Project"
 	@echo "... MyLibrary"
+	@echo "... src/generators/ImmigrantGenerator.o"
+	@echo "... src/generators/ImmigrantGenerator.i"
+	@echo "... src/generators/ImmigrantGenerator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
