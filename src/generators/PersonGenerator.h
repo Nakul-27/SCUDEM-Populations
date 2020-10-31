@@ -12,7 +12,7 @@
 #include <string>
 #include <vector>
 
-#include "../models/Immigrant.h"
+#include "../models/parent/person.h"
 
 using std::string;
 
@@ -22,7 +22,7 @@ string getSocialClass();
 int getAge();
 float getProb();
 
-std::vector<Immigrant> generateImmigrants(int num);
-void displayImmigrants(std::vector<Immigrant> listOfImmigrants);
+std::vector<Person> generatePeople(int num);
+void displayPeople(std::vector<Person> listOfPeople, string personType);
 
 #endif /* ifndef IMMIGRANT_GENERATOR_H */

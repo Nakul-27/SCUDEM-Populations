@@ -4,11 +4,11 @@
 // Date of Last Edit: 29 OCT 2020
 //
 
-#include "ImmigrantGenerator.h"
+#include "PersonGenerator.h"
 
 #include <cstdlib>
 
-#include "../models/Immigrant.h"
+#include "../models/parent/person.h"
 #include "../templates/rng.cpp"
 
 using std::string;
@@ -47,9 +47,9 @@ int getAge() {
 
 float getProb() { return rand() / (RAND_MAX + 1.); }
 
-std::vector<Immigrant> generateImmigrants(int num) {
-  std::vector<Immigrant> loI;
-  loI.reserve(num);
+std::vector<Person> generatePeople(int num) {
+  std::vector<Person> loP;
+  loP.reserve(num);
   seed = (unsigned int)time(NULL);
 
   for (int i = 0; i < num; ++i) {
@@ -59,22 +59,22 @@ std::vector<Immigrant> generateImmigrants(int num) {
     int age = getAge();
     float interactionProb = getProb();
 
-    loI.push_back(Immigrant(method, gender, socialClass, age, interactionProb));
+    loP.push_back(Person(method, gender, socialClass, age, interactionProb));
   }
 
-  return loI;
+  return loP;
 }
 
-void displayImmigrants(std::vector<Immigrant> listOfImmigrants) {
+void displayPeople(std::vector<Person> listOfPeople, string personType) {
   string method;
   int count = 1;
   int mediationCount = 0;
   int negotiationCount = 0;
   int arbitrationCount = 0;
 
-  std::vector<Immigrant>::iterator it;
-  for (it = listOfImmigrants.begin(); it != listOfImmigrants.end(); ++it) {
-    printf("Immigrant number %i \n", count);
+  std::vector<Person>::iterator it;
+  for (it = listOfPeople.begin(); it != listOfPeople.end(); ++it) {
+    std::cout << personType << " number " << count << std::endl;
     method = it->getMethod();
     it->Display();
     method == "negotiation"
