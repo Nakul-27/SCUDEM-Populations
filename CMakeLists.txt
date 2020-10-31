@@ -13,8 +13,8 @@ set(GENERATOR_DIR src/generators)
 add_executable(
   Project
   src/main.cpp
-  ${MODELS_DIR}/Immigrant.cpp
-  ${GENERATOR_DIR}/ImmigrantGenerator.cpp
+  ${MODELS_DIR}/parent/person.cpp
+  ${GENERATOR_DIR}/PersonGenerator.cpp
 )
 
 # Include the directory where MyLibrary project is. Otherwise, we can't use the

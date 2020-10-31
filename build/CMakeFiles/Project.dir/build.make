@@ -70,44 +70,44 @@ CMakeFiles/Project.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/src/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/main.cpp" -o CMakeFiles/Project.dir/src/main.cpp.s
 
-CMakeFiles/Project.dir/src/models/Immigrant.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/src/models/Immigrant.cpp.o: ../src/models/Immigrant.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/src/models/Immigrant.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/src/models/Immigrant.cpp.o -c "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.cpp"
+CMakeFiles/Project.dir/src/models/parent/person.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/src/models/parent/person.cpp.o: ../src/models/parent/person.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project.dir/src/models/parent/person.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/src/models/parent/person.cpp.o -c "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/parent/person.cpp"
 
-CMakeFiles/Project.dir/src/models/Immigrant.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/src/models/Immigrant.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.cpp" > CMakeFiles/Project.dir/src/models/Immigrant.cpp.i
+CMakeFiles/Project.dir/src/models/parent/person.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/src/models/parent/person.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/parent/person.cpp" > CMakeFiles/Project.dir/src/models/parent/person.cpp.i
 
-CMakeFiles/Project.dir/src/models/Immigrant.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/src/models/Immigrant.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/Immigrant.cpp" -o CMakeFiles/Project.dir/src/models/Immigrant.cpp.s
+CMakeFiles/Project.dir/src/models/parent/person.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/src/models/parent/person.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/parent/person.cpp" -o CMakeFiles/Project.dir/src/models/parent/person.cpp.s
 
-CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o: CMakeFiles/Project.dir/flags.make
-CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o: ../src/generators/ImmigrantGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o -c "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/ImmigrantGenerator.cpp"
+CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.o: CMakeFiles/Project.dir/flags.make
+CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.o: ../src/generators/PersonGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.o -c "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/PersonGenerator.cpp"
 
-CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/ImmigrantGenerator.cpp" > CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.i
+CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/PersonGenerator.cpp" > CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.i
 
-CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/ImmigrantGenerator.cpp" -o CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.s
+CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/PersonGenerator.cpp" -o CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.s
 
 # Object files for target Project
 Project_OBJECTS = \
 "CMakeFiles/Project.dir/src/main.cpp.o" \
-"CMakeFiles/Project.dir/src/models/Immigrant.cpp.o" \
-"CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o"
+"CMakeFiles/Project.dir/src/models/parent/person.cpp.o" \
+"CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.o"
 
 # External object files for target Project
 Project_EXTERNAL_OBJECTS =
 
 Project: CMakeFiles/Project.dir/src/main.cpp.o
-Project: CMakeFiles/Project.dir/src/models/Immigrant.cpp.o
-Project: CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o
+Project: CMakeFiles/Project.dir/src/models/parent/person.cpp.o
+Project: CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.o
 Project: CMakeFiles/Project.dir/build.make
 Project: libraries/MyLibrary/libMyLibrary.a
 Project: CMakeFiles/Project.dir/link.txt

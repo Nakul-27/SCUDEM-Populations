@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o"
+  "CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.o"
   "CMakeFiles/Project.dir/src/main.cpp.o"
-  "CMakeFiles/Project.dir/src/models/Immigrant.cpp.o"
+  "CMakeFiles/Project.dir/src/models/parent/person.cpp.o"
   "Project"
   "Project.pdb"
 )

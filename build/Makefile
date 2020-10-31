@@ -136,32 +136,32 @@ MyLibrary/fast:
 	$(MAKE) -f libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build.make libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build
 .PHONY : MyLibrary/fast
 
-src/generators/ImmigrantGenerator.o: src/generators/ImmigrantGenerator.cpp.o
+src/generators/PersonGenerator.o: src/generators/PersonGenerator.cpp.o
 
-.PHONY : src/generators/ImmigrantGenerator.o
+.PHONY : src/generators/PersonGenerator.o
 
 # target to build an object file
-src/generators/ImmigrantGenerator.cpp.o:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.o
-.PHONY : src/generators/ImmigrantGenerator.cpp.o
+src/generators/PersonGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.o
+.PHONY : src/generators/PersonGenerator.cpp.o
 
-src/generators/ImmigrantGenerator.i: src/generators/ImmigrantGenerator.cpp.i
+src/generators/PersonGenerator.i: src/generators/PersonGenerator.cpp.i
 
-.PHONY : src/generators/ImmigrantGenerator.i
+.PHONY : src/generators/PersonGenerator.i
 
 # target to preprocess a source file
-src/generators/ImmigrantGenerator.cpp.i:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.i
-.PHONY : src/generators/ImmigrantGenerator.cpp.i
+src/generators/PersonGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.i
+.PHONY : src/generators/PersonGenerator.cpp.i
 
-src/generators/ImmigrantGenerator.s: src/generators/ImmigrantGenerator.cpp.s
+src/generators/PersonGenerator.s: src/generators/PersonGenerator.cpp.s
 
-.PHONY : src/generators/ImmigrantGenerator.s
+.PHONY : src/generators/PersonGenerator.s
 
 # target to generate assembly for a file
-src/generators/ImmigrantGenerator.cpp.s:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/generators/ImmigrantGenerator.cpp.s
-.PHONY : src/generators/ImmigrantGenerator.cpp.s
+src/generators/PersonGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.s
+.PHONY : src/generators/PersonGenerator.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -190,32 +190,32 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/models/Immigrant.o: src/models/Immigrant.cpp.o
+src/models/parent/person.o: src/models/parent/person.cpp.o
 
-.PHONY : src/models/Immigrant.o
+.PHONY : src/models/parent/person.o
 
 # target to build an object file
-src/models/Immigrant.cpp.o:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/models/Immigrant.cpp.o
-.PHONY : src/models/Immigrant.cpp.o
+src/models/parent/person.cpp.o:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/models/parent/person.cpp.o
+.PHONY : src/models/parent/person.cpp.o
 
-src/models/Immigrant.i: src/models/Immigrant.cpp.i
+src/models/parent/person.i: src/models/parent/person.cpp.i
 
-.PHONY : src/models/Immigrant.i
+.PHONY : src/models/parent/person.i
 
 # target to preprocess a source file
-src/models/Immigrant.cpp.i:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/models/Immigrant.cpp.i
-.PHONY : src/models/Immigrant.cpp.i
+src/models/parent/person.cpp.i:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/models/parent/person.cpp.i
+.PHONY : src/models/parent/person.cpp.i
 
-src/models/Immigrant.s: src/models/Immigrant.cpp.s
+src/models/parent/person.s: src/models/parent/person.cpp.s
 
-.PHONY : src/models/Immigrant.s
+.PHONY : src/models/parent/person.s
 
 # target to generate assembly for a file
-src/models/Immigrant.cpp.s:
-	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/models/Immigrant.cpp.s
-.PHONY : src/models/Immigrant.cpp.s
+src/models/parent/person.cpp.s:
+	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/models/parent/person.cpp.s
+.PHONY : src/models/parent/person.cpp.s
 
 # Help Target
 help:
@@ -227,15 +227,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... Project"
 	@echo "... MyLibrary"
-	@echo "... src/generators/ImmigrantGenerator.o"
-	@echo "... src/generators/ImmigrantGenerator.i"
-	@echo "... src/generators/ImmigrantGenerator.s"
+	@echo "... src/generators/PersonGenerator.o"
+	@echo "... src/generators/PersonGenerator.i"
+	@echo "... src/generators/PersonGenerator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/models/Immigrant.o"
-	@echo "... src/models/Immigrant.i"
-	@echo "... src/models/Immigrant.s"
+	@echo "... src/models/parent/person.o"
+	@echo "... src/models/parent/person.i"
+	@echo "... src/models/parent/person.s"
 .PHONY : help
 
 
