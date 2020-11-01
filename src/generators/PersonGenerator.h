@@ -24,5 +24,6 @@ float getProb();
 
 std::vector<Person> generatePeople(int num);
 void displayPeople(std::vector<Person> listOfPeople, string personType);
+string prevailingMethod(std::vector<Person> listOfPeople);
 
 #endif /* ifndef IMMIGRANT_GENERATOR_H */

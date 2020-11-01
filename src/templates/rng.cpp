@@ -6,9 +6,12 @@
 // https://blog.demofox.org/2013/07/07/a-super-tiny-random-number-generator/
 //
 
+#include <math.h>
 #include <string.h>
 
+#include <cstdlib>
 #include <cstring>
+#include <iostream>
 
 unsigned int seed = 0;
 unsigned int GenerateRandomBit() {
@@ -33,6 +36,6 @@ void GenerateRandom(T &value) {
 int setup(int max) {
   unsigned int random;
   GenerateRandom(random);
-  int index = random % 10 % max;
+  float index = floor(random / 10 % max);
   return index;
 }
