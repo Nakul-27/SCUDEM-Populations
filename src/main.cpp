@@ -8,7 +8,9 @@
 #include <stdio.h>
 #include <unistd.h>
 
+#include <algorithm>
 #include <fstream>
+#include <functional>
 #include <fwdpp/diploid.hh>
 #include <iostream>
 #include <string>
@@ -58,7 +60,7 @@ void simulation(std::ofstream& file, int numTimes) {
 // // // OTHER METHODS
 
 // ToDo: DECIDE HOW THE METHOD SHOULD CHANGE OVER TIME WITH RESPECT TO INFLUENCE
-int main() {
+int main(int argc, char** argv) {
   std::ofstream file;
 
   simulation(file, 100);

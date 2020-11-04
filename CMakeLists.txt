@@ -23,8 +23,8 @@ set(GENERATOR_DIR src/generators)
 add_executable(
   Project
   src/main.cpp
-  ${MODELS_DIR}/person.cpp
-  ${GENERATOR_DIR}PersonGenerator.cpp
+  ${MODELS_DIR}/parent/person.cpp
+  ${GENERATOR_DIR}/PersonGenerator.cpp
   ${GSL_INCLUDE_DIR}
 )
 
