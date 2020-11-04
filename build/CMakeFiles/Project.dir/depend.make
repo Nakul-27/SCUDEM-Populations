@@ -9,6 +9,23 @@ CMakeFiles/Project.dir/src/generators/PersonGenerator.cpp.o: ../src/templates/rn
 CMakeFiles/Project.dir/src/main.cpp.o: ../src/generators/PersonGenerator.h
 CMakeFiles/Project.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/Project.dir/src/main.cpp.o: ../src/models/parent/person.h
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/forward_types.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/internal/mutation_internal.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/internal/type_traits.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/internal/void_t.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/io/diploid.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/io/scalar_serialization.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/meta/always_false.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/simfunctions/recycling.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/tags/tags.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/type_traits.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/util/named_type.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/gsl/gsl_inline.h
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/gsl/gsl_mode.h
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/gsl/gsl_precision.h
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/gsl/gsl_sf_bessel.h
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/gsl/gsl_sf_result.h
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/gsl/gsl_types.h
 
 CMakeFiles/Project.dir/src/models/parent/person.cpp.o: ../src/models/parent/person.cpp
 CMakeFiles/Project.dir/src/models/parent/person.cpp.o: ../src/models/parent/person.h

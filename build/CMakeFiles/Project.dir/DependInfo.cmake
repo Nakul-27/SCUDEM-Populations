@@ -12,11 +12,11 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/libraries/MyLibrary/CMakeFiles/MyLibrary.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

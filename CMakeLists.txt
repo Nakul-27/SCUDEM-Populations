@@ -1,8 +1,18 @@
 # Minimum version of CMake required to build this project
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.8)
+
+project(Project VERSION 0.0.0 LANGUAGES CXX)
+
+find_package(gsl REQUIRED)
+
+set(CMAKE_C_COMPILER "gcc")
+set(CMAKE_CXX_COMPILER "g++")
+
+set(GCC_COVERAGE_COMPILE_FLAGS "-Wc++11-extensions")
 
 # Name of the project
-project(Project)
+
+set(CMAKE_CXX_STANDARD 14)
 
 # Create a few variables for the folder names, so they are easier to rename in
 # the future
@@ -13,14 +23,11 @@ set(GENERATOR_DIR src/generators)
 add_executable(
   Project
   src/main.cpp
-  ${MODELS_DIR}/parent/person.cpp
-  ${GENERATOR_DIR}/PersonGenerator.cpp
+  ${MODELS_DIR}/person.cpp
+  ${GENERATOR_DIR}PersonGenerator.cpp
+  ${GSL_INCLUDE_DIR}
 )
 
-# Include the directory where MyLibrary project is. Otherwise, we can't use the
-# library
-add_subdirectory(libraries/MyLibrary)
-
-# Link the executable and the library together
-target_link_libraries(Project MyLibrary)
-
+target_include_directories(Project PRIVATE ${GSL_INCLUDE_DIR})
+target_link_directories(Project PRIVATE ${GSL_INCLUDE_DIR})
+target_link_libraries(Project PRIVATE ${GSL_LIBRARIES})

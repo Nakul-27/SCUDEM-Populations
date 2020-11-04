@@ -81,8 +81,7 @@ void displayPeople(std::vector<Person> listOfPeople, string personType) {
   int arbitrationCount = 0;
   int mediationCount = 0;
 
-  std::vector<Person>::iterator it;
-  for (it = listOfPeople.begin(); it != listOfPeople.end(); ++it) {
+  for (auto it = listOfPeople.begin(); it != listOfPeople.end(); ++it) {
     std::cout << personType << " number " << count << std::endl;
     method = it->getMethod();
     it->Display();

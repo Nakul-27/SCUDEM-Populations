@@ -64,7 +64,6 @@ CMAKE_BINARY_DIR = "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/b
 
 # The main recursive "clean" target.
 clean: CMakeFiles/Project.dir/clean
-clean: libraries/MyLibrary/clean
 
 .PHONY : clean
 
@@ -72,10 +71,10 @@ clean: libraries/MyLibrary/clean
 # Target rules for target CMakeFiles/Project.dir
 
 # All Build rule for target.
-CMakeFiles/Project.dir/all: libraries/MyLibrary/CMakeFiles/MyLibrary.dir/all
+CMakeFiles/Project.dir/all:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/depend
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" --progress-num=3,4,5,6 "Built target Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" --progress-num=1,2,3,4 "Built target Project"
 .PHONY : CMakeFiles/Project.dir/all
 
 # Include target in all.
@@ -85,7 +84,7 @@ all: CMakeFiles/Project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Project.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" 6
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" 0
 .PHONY : CMakeFiles/Project.dir/rule
@@ -99,56 +98,6 @@ Project: CMakeFiles/Project.dir/rule
 CMakeFiles/Project.dir/clean:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/clean
 .PHONY : CMakeFiles/Project.dir/clean
-
-#=============================================================================
-# Directory level rules for directory libraries/MyLibrary
-
-# Recursive "all" directory target.
-libraries/MyLibrary/all: libraries/MyLibrary/CMakeFiles/MyLibrary.dir/all
-
-.PHONY : libraries/MyLibrary/all
-
-# Recursive "preinstall" directory target.
-libraries/MyLibrary/preinstall:
-
-.PHONY : libraries/MyLibrary/preinstall
-
-# Recursive "clean" directory target.
-libraries/MyLibrary/clean: libraries/MyLibrary/CMakeFiles/MyLibrary.dir/clean
-
-.PHONY : libraries/MyLibrary/clean
-
-#=============================================================================
-# Target rules for target libraries/MyLibrary/CMakeFiles/MyLibrary.dir
-
-# All Build rule for target.
-libraries/MyLibrary/CMakeFiles/MyLibrary.dir/all:
-	$(MAKE) -f libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build.make libraries/MyLibrary/CMakeFiles/MyLibrary.dir/depend
-	$(MAKE) -f libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build.make libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" --progress-num=1,2 "Built target MyLibrary"
-.PHONY : libraries/MyLibrary/CMakeFiles/MyLibrary.dir/all
-
-# Include target in all.
-all: libraries/MyLibrary/CMakeFiles/MyLibrary.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-libraries/MyLibrary/CMakeFiles/MyLibrary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" 2
-	$(MAKE) -f CMakeFiles/Makefile2 libraries/MyLibrary/CMakeFiles/MyLibrary.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/build/CMakeFiles" 0
-.PHONY : libraries/MyLibrary/CMakeFiles/MyLibrary.dir/rule
-
-# Convenience name for target.
-MyLibrary: libraries/MyLibrary/CMakeFiles/MyLibrary.dir/rule
-
-.PHONY : MyLibrary
-
-# clean rule for target.
-libraries/MyLibrary/CMakeFiles/MyLibrary.dir/clean:
-	$(MAKE) -f libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build.make libraries/MyLibrary/CMakeFiles/MyLibrary.dir/clean
-.PHONY : libraries/MyLibrary/CMakeFiles/MyLibrary.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

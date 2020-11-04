@@ -123,19 +123,6 @@ Project/fast:
 	$(MAKE) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/build
 .PHONY : Project/fast
 
-#=============================================================================
-# Target rules for targets named MyLibrary
-
-# Build rule for target.
-MyLibrary: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MyLibrary
-.PHONY : MyLibrary
-
-# fast build rule for target.
-MyLibrary/fast:
-	$(MAKE) -f libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build.make libraries/MyLibrary/CMakeFiles/MyLibrary.dir/build
-.PHONY : MyLibrary/fast
-
 src/generators/PersonGenerator.o: src/generators/PersonGenerator.cpp.o
 
 .PHONY : src/generators/PersonGenerator.o
@@ -226,7 +213,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Project"
-	@echo "... MyLibrary"
 	@echo "... src/generators/PersonGenerator.o"
 	@echo "... src/generators/PersonGenerator.i"
 	@echo "... src/generators/PersonGenerator.s"

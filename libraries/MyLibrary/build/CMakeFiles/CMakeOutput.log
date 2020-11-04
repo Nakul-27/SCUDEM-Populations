@@ -288,3 +288,29 @@ Parsed CXX implicit link information from above output:
   implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks]
 
 
+Performing C++ SOURCE FILE Test HAS_FLTO succeeded with the following output:
+Change Dir: /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/libraries/MyLibrary/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_5653a/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_5653a.dir/build.make CMakeFiles/cmTC_5653a.dir/build
+Building CXX object CMakeFiles/cmTC_5653a.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -DHAS_FLTO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -flto -o CMakeFiles/cmTC_5653a.dir/src.cxx.o -c "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/libraries/MyLibrary/build/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_5653a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5653a.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DHAS_FLTO -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_5653a.dir/src.cxx.o  -o cmTC_5653a -flto 
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_FLTO_THIN succeeded with the following output:
+Change Dir: /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/libraries/MyLibrary/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_08891/fast && /Applications/Xcode.app/Contents/Developer/usr/bin/make -f CMakeFiles/cmTC_08891.dir/build.make CMakeFiles/cmTC_08891.dir/build
+Building CXX object CMakeFiles/cmTC_08891.dir/src.cxx.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++    -DHAS_FLTO_THIN -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -flto=thin -o CMakeFiles/cmTC_08891.dir/src.cxx.o -c "/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/libraries/MyLibrary/build/CMakeFiles/CMakeTmp/src.cxx"
+Linking CXX executable cmTC_08891
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08891.dir/link.txt --verbose=1
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -DHAS_FLTO_THIN -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_08891.dir/src.cxx.o  -o cmTC_08891 -flto=thin 
+
+
+Source file was:
+int main() { return 0; }

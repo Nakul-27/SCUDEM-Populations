@@ -4,18 +4,23 @@
 // Date of Last Edit: 29 OCT 2020
 //
 
+#include <gsl/gsl_sf_bessel.h>
 #include <stdio.h>
 #include <unistd.h>
 
 #include <fstream>
+#include <fwdpp/diploid.hh>
 #include <iostream>
 #include <string>
 #include <vector>
 
 #include "generators/PersonGenerator.h"
-// #include "models/children/Immigrant.h"
 #include "models/parent/person.h"
 
+// IDEA  Using the concept of genes in order to model the two populations.
+// Use fwdpp: http://molpopgen.github.io/fwdpp/doc/md/overview.html to model
+// Pros: Good Library, Accurate Models, Sophisticated
+// Cons: Sophisticated and Complex, Advanced, Steep Learning curve.
 void simulation(std::ofstream& file, int numTimes) {
   file.open("Pre-Results.txt");
 

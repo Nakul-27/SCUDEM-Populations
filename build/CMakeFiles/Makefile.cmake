@@ -8,11 +8,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "CMakeFiles/3.15.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.15.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.15.4/CMakeSystem.cmake"
-  "../libraries/MyLibrary/CMakeLists.txt"
-  "/usr/local/share/cmake-3.15/Modules/CMakeCInformation.cmake"
   "/usr/local/share/cmake-3.15/Modules/CMakeCXXInformation.cmake"
   "/usr/local/share/cmake-3.15/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
   "/usr/local/share/cmake-3.15/Modules/CMakeCommonLanguageInclude.cmake"
@@ -21,15 +18,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/share/cmake-3.15/Modules/CMakeLanguageInformation.cmake"
   "/usr/local/share/cmake-3.15/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/share/cmake-3.15/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/local/share/cmake-3.15/Modules/Compiler/AppleClang-C.cmake"
   "/usr/local/share/cmake-3.15/Modules/Compiler/AppleClang-CXX.cmake"
   "/usr/local/share/cmake-3.15/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/local/share/cmake-3.15/Modules/Compiler/Clang.cmake"
   "/usr/local/share/cmake-3.15/Modules/Compiler/GNU.cmake"
+  "/usr/local/share/cmake-3.15/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/local/share/cmake-3.15/Modules/FindPackageMessage.cmake"
+  "/usr/local/share/cmake-3.15/Modules/Findgsl.cmake"
   "/usr/local/share/cmake-3.15/Modules/Internal/CMakeCheckCompilerFlag.cmake"
-  "/usr/local/share/cmake-3.15/Modules/Platform/Apple-AppleClang-C.cmake"
   "/usr/local/share/cmake-3.15/Modules/Platform/Apple-AppleClang-CXX.cmake"
-  "/usr/local/share/cmake-3.15/Modules/Platform/Apple-Clang-C.cmake"
   "/usr/local/share/cmake-3.15/Modules/Platform/Apple-Clang-CXX.cmake"
   "/usr/local/share/cmake-3.15/Modules/Platform/Apple-Clang.cmake"
   "/usr/local/share/cmake-3.15/Modules/Platform/Darwin-Initialize.cmake"
@@ -46,11 +43,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "libraries/MyLibrary/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Project.dir/DependInfo.cmake"
-  "libraries/MyLibrary/CMakeFiles/MyLibrary.dir/DependInfo.cmake"
   )

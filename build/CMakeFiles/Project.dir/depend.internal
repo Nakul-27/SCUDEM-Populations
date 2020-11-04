@@ -10,6 +10,23 @@ CMakeFiles/Project.dir/src/main.cpp.o
  /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/PersonGenerator.h
  /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/main.cpp
  /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/parent/person.h
+ /usr/local/include/fwdpp/forward_types.hpp
+ /usr/local/include/fwdpp/internal/mutation_internal.hpp
+ /usr/local/include/fwdpp/internal/type_traits.hpp
+ /usr/local/include/fwdpp/internal/void_t.hpp
+ /usr/local/include/fwdpp/io/diploid.hpp
+ /usr/local/include/fwdpp/io/scalar_serialization.hpp
+ /usr/local/include/fwdpp/meta/always_false.hpp
+ /usr/local/include/fwdpp/simfunctions/recycling.hpp
+ /usr/local/include/fwdpp/tags/tags.hpp
+ /usr/local/include/fwdpp/type_traits.hpp
+ /usr/local/include/fwdpp/util/named_type.hpp
+ /usr/local/include/gsl/gsl_inline.h
+ /usr/local/include/gsl/gsl_mode.h
+ /usr/local/include/gsl/gsl_precision.h
+ /usr/local/include/gsl/gsl_sf_bessel.h
+ /usr/local/include/gsl/gsl_sf_result.h
+ /usr/local/include/gsl/gsl_types.h
 CMakeFiles/Project.dir/src/models/parent/person.cpp.o
  /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/parent/person.cpp
  /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/parent/person.h
