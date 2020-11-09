@@ -29,6 +29,7 @@ CMakeFiles/Project.dir/src/main.cpp.o
  /usr/local/include/fwdpp/internal/util.hpp
  /usr/local/include/fwdpp/internal/void_t.hpp
  /usr/local/include/fwdpp/mutate_recombine.hpp
+ /usr/local/include/fwdpp/named_type.hpp
  /usr/local/include/fwdpp/poptypes/tags.hpp
  /usr/local/include/fwdpp/sample_diploid.hpp
  /usr/local/include/fwdpp/sample_diploid.tcc
@@ -37,7 +38,6 @@ CMakeFiles/Project.dir/src/main.cpp.o
  /usr/local/include/fwdpp/tags/tags.hpp
  /usr/local/include/fwdpp/type_traits.hpp
  /usr/local/include/fwdpp/util.hpp
- /usr/local/include/fwdpp/util/named_type.hpp
  /usr/local/include/gsl/gsl_blas_types.h
  /usr/local/include/gsl/gsl_block_char.h
  /usr/local/include/gsl/gsl_block_complex_double.h

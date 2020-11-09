@@ -1,13 +1,17 @@
+// Using the Premises from Genetic and Evolutionary to demonstrate the evolution
+// of two populations.
+//
 // IDEA: GENETICS WITH RESPECT TO METHODS: THE METHODS CAN BE RANKED IN ORDER OF
 // DOMINANCE BASED OFF OF THE SOCIAL STATUS OF THE AREA IN WHICH THE POPULATIONS
 // ORIGINATE (VIOLENCE => NEGOTIATION = LESS DOMINANT ETC.)
 //
-// THREE ASSUMPTIONS:
-// 1) NO FITNESS - NO FACTORS HINDERING REPRODUCTION; ?????
-// 2) GENETICS IS A GOOD MODEL FOR SOCIAL BEHAVIOR
-// 3) LIMITING POPULATION GROWTH - MORE PEOPLE COMING IN
+// TWO ASSUMPTIONS:
+// 1) GENETICS/EVOLUTION IS A GOOD MODEL FOR SOCIAL BEHAVIOR
+// 2) LIMITING POPULATION GROWTH - MORE PEOPLE COMING IN
 //
-// DIPLOID ORGANISMS WITH MULTIPLE GENES:
+// NEED TO CHANGE GENERATION TO BE
+//
+// HAPLOID ORGANISMS WITH MULTIPLE GENES:
 // (NO AGE), CONFLICT RESOLUTION,
 // SOCIABILITY, SKIN COLOR?
 //
@@ -20,7 +24,7 @@
 // CANNOT MANDATE ONLY REPRODUCE WITH OPPOSING SIDE
 //
 // VARIABLES:
-// - N - NUM OF DIPLOID ORGANISMS
+// - N - NUM OF HAPLOID ORGANISMS
 // - Theta - N/A BECAUSE THERE IS TOO SMALL OF A POP FOR MUTATION RATE TO HAVE
 // AN IMPACT
 // - Rho - N/A NO RECOMBINATION RATE
@@ -43,6 +47,7 @@
 #include <functional>
 #include <fwdpp/diploid.hh>
 #include <iostream>
+#include <random>
 #include <string>
 #include <vector>
 
@@ -53,19 +58,56 @@
 // Use fwdpp: http://molpopgen.github.io/fwdpp/doc/md/overview.html to model
 // Pros: Good Library, Accurate Models, Sophisticated
 // Cons: Sophisticated and Complex, Advanced, Steep Learning curve.
-void simulation(std::ofstream& file, int numTimes) {
+
+// TODO: NEED TO IMPLEMENT FUNCTION IN PARALLEL
+void simulation(std::ofstream& file, int numTimes, int numInteractions) {
+  unsigned int seed = 0;
+  // std::random_device rd;
+  // std::mt19937 = gen(rd());
+  // std::uniform_int_distribution<> dis(1, 9999);
+
+  // seed = dis(gen);
   file.open("Pre-Results.txt");
 
   // Number of Immigrants and Ugandans
   int immigrantNumber = 100;
-  int ugandanNumber = 50;
+  int ugandanNumber = 5000;
 
   std::vector<Person> listOfImmigrants;
   std::vector<Person> listOfUgandans;
+  std::vector<Person> Combined;
   for (int i = 0; i < numTimes; ++i) {
+    // Generates a new RNG seed each time a new population is created
+    // srand(seed);
     // Generate Vectors of Immigrants and Ugandans
-    listOfImmigrants = generatePeople(immigrantNumber);
-    listOfUgandans = generatePeople(ugandanNumber);
+    listOfImmigrants = generatePeople(immigrantNumber, "Immigrant");
+    listOfUgandans = generatePeople(ugandanNumber, "Ugandan");
+
+    // Shuffle the vectors into one another
+    Combined.reserve(listOfImmigrants.size() + listOfUgandans.size());
+    Combined.insert(Combined.end(), listOfImmigrants.begin(),
+                    listOfImmigrants.end());
+    Combined.insert(Combined.end(), listOfUgandans.begin(),
+                    listOfUgandans.end());
+    std::shuffle(std::begin(Combined), std::end(Combined),
+                 std::default_random_engine());
+
+    // std::cout << Combined.at(1).getClassification() << std::endl;
+
+    std::cout << "Iteration: " << i << std::endl;
+    for (int i = 0; i < 10; ++i) {
+      // Cannot make var for rand() % Combined.size() because need to generate
+      // new Random Number for each index.
+      // Do not need to check if the indexes are the same because of how large
+      // Combined.size() is and will be.
+      // TODO: REPLACE Combined.size() with the Fitness Score.
+      if (Combined.at(rand() % Combined.size()).getAge() >
+          Combined.at(rand() % Combined.size()).getAge()) {
+        std::cout << "x" << std::endl;
+      } else {
+        std::cout << "y" << std::endl;
+      }
+    }
 
     // Display Data
     // displayPeople(listOfImmigrants, "Immigrants");
@@ -74,29 +116,16 @@ void simulation(std::ofstream& file, int numTimes) {
     string method = prevailingMethod(listOfImmigrants);
     string method2 = prevailingMethod(listOfUgandans);
 
-    // std::cout << method << "\n" << method2 << std::endl << std::endl;
     file << method << "\n" << method2 << "\n \n";
   }
 
   file.close();
 }
 
-// ToDo: Load the data into a Python Script
-
-// // Construct a graph from the Pre-Results text file.
-// ToDo: FIGURE OUT HOW THE IMMIGRANTS AND UGANDANS SHOULD INTERACT.
-// // RANDOM PERHAPS?
-// // // RANDOM IMMIGRANT poI VS RANDOM UGANDAN poI?
-// // // OTHER METHODS
-
-// ToDo: DECIDE HOW THE METHOD SHOULD CHANGE OVER TIME WITH RESPECT TO INFLUENCE
 int main(int argc, char** argv) {
   std::ofstream file;
 
-  simulation(file, 100);
-
-  std::vector<int> x{5, 2, 3, 4, 1};
-  sort(x.begin(), x.end(), [](int a, int b) { return a < b; });
+  simulation(file, 100, 1000);
 
   // CHANGES THE METHOD
   // // for (int index = 0; index < listOfImmigrants.size(); ++index) {

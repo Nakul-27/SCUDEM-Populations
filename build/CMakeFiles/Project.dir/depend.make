@@ -28,6 +28,7 @@ CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/internal/type_tr
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/internal/util.hpp
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/internal/void_t.hpp
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/mutate_recombine.hpp
+CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/named_type.hpp
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/poptypes/tags.hpp
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/sample_diploid.hpp
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/sample_diploid.tcc
@@ -36,7 +37,6 @@ CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/simfunctions/rec
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/tags/tags.hpp
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/type_traits.hpp
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/util.hpp
-CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/fwdpp/util/named_type.hpp
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/gsl/gsl_blas_types.h
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/gsl/gsl_block_char.h
 CMakeFiles/Project.dir/src/main.cpp.o: /usr/local/include/gsl/gsl_block_complex_double.h

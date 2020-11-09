@@ -4,6 +4,7 @@ clang++
 /Users/nakul_rao/gsl-2.6/include
 -L
 /Users/nakul_rao/gsl-2.6/lib
+-std=c++11
 -std=c++14
 -stdlib=stdlibc++
 -Wc++11-extensions

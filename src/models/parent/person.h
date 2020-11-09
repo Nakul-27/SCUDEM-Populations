@@ -13,6 +13,7 @@ using std::string;
 class Person {
  public:
   // Get Methods
+  string getClassification(void);
   string getMethod(void);
   string getGender(void);
   string getSocialClass(void);
@@ -27,8 +28,8 @@ class Person {
   void setInteractionProb(float iP);
 
   // Non-Default Constructor
-  Person(std::string method, std::string gender, std::string socialClass,
-         int age, float interactionProb);
+  Person(std::string classification, std::string method, std::string gender,
+         std::string socialClass, int age, float interactionProb);
 
   // Immigrant();
   ~Person();
@@ -36,6 +37,7 @@ class Person {
   void Display(void);
 
  private:
+  std::string classification;
   std::string method;
   std::string gender;
   std::string socialClass;

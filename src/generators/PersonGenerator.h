@@ -16,13 +16,13 @@
 
 using std::string;
 
-string getTechnique();
-string getGender();
-string getSocialClass();
+string getTechnique(std::string methods[3]);
+string getGender(std::string genders[2]);
+string getSocialClass(std::string socialClasses[3]);
 int getAge();
 float getProb();
 
-std::vector<Person> generatePeople(int num);
+std::vector<Person> generatePeople(int num, string classification);
 void displayPeople(std::vector<Person> listOfPeople, string personType);
 string prevailingMethod(std::vector<Person> listOfPeople);
 

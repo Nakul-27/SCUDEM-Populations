@@ -12,6 +12,7 @@
 #include <iostream>
 
 // Get Methods
+string Person::getClassification(void) { return classification; }
 string Person::getMethod(void) { return method; }
 string Person::getGender(void) { return gender; }
 string Person::getSocialClass(void) { return socialClass; }
@@ -27,6 +28,7 @@ void Person::setInteractionProb(float iP) { this->interactionProb = iP; }
 
 // Display
 void Person::Display() {
+  std::cout << "Classification: " << getClassification() << std::endl;
   std::cout << "Method: " << getMethod() << std::endl;
   std::cout << "Gender: " << getGender() << std::endl;
   std::cout << "Social Class: " << getSocialClass() << std::endl;
@@ -35,9 +37,10 @@ void Person::Display() {
 }
 
 // Constructor
-Person::Person(std::string newMethod, std::string newGender,
-               std ::string newSocialClass, int newAge,
+Person::Person(std::string newClassification, std::string newMethod,
+               std::string newGender, std ::string newSocialClass, int newAge,
                float newInteractionProb) {
+  classification = newClassification;
   method = newMethod;
   gender = newGender;
   age = newAge;
@@ -47,4 +50,3 @@ Person::Person(std::string newMethod, std::string newGender,
 
 // Destructor
 Person::~Person(void) {}
-

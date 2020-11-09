@@ -14,26 +14,21 @@
 
 using std::string;
 
-string getTechnique() {
-  //  srand((unsigned)time(NULL));
-  string methods[3] = {"negotiation", "arbitration", "mediation"};
+// TODO: NEED TO GENERATE FITNESS SCORE AND CREATE A get METHOD FOR IT.
 
+string getTechnique(std::string methods[3]) {
   int index = setup(3);
 
   return methods[index];
 }
 
-string getGender() {
-  string gender[2] = {"male", "female"};
-
+string getGender(std::string gender[2]) {
   int index = setup(2);
 
   return gender[index];
 }
 
-string getSocialClass() {
-  string socialClasses[3] = {"lower", "middle", "upper"};
-
+string getSocialClass(std::string socialClasses[3]) {
   int index = setup(3);
 
   return socialClasses[index];
@@ -48,7 +43,7 @@ int getAge() {
 
 float getProb() { return rand() / (RAND_MAX + 1.); }
 
-std::vector<Person> generatePeople(int num) {
+std::vector<Person> generatePeople(int num, string classification) {
   std::vector<Person> loP;
   loP.reserve(num);
 
@@ -58,16 +53,20 @@ std::vector<Person> generatePeople(int num) {
 
   seed = dis(gen);
 
+  string methods[3] = {"negotiation", "arbitration", "mediation"};
+  string genders[2] = {"male", "female"};
+  string socialClasses[3] = {"lower", "middle", "upper"};
   // seed = (unsigned int)time(NULL);
 
   for (int i = 0; i < num; ++i) {
-    std::string method = getTechnique();
-    std::string gender = getGender();
-    std::string socialClass = getSocialClass();
+    std::string method = getTechnique(methods);
+    std::string gender = getGender(genders);
+    std::string socialClass = getSocialClass(socialClasses);
     int age = getAge();
     float interactionProb = getProb();
 
-    loP.push_back(Person(method, gender, socialClass, age, interactionProb));
+    loP.push_back(Person(classification, method, gender, socialClass, age,
+                         interactionProb));
   }
 
   return loP;
@@ -85,9 +84,9 @@ void displayPeople(std::vector<Person> listOfPeople, string personType) {
     std::cout << personType << " number " << count << std::endl;
     method = it->getMethod();
     it->Display();
-    method == "negotiation"
-        ? ++negotiationCount
-        : method == "arbitration" ? ++arbitrationCount : ++mediationCount;
+    method == "negotiation"   ? ++negotiationCount
+    : method == "arbitration" ? ++arbitrationCount
+                              : ++mediationCount;
     std::cout << "" << std::endl << std::endl;
     ++count;
   }
@@ -98,9 +97,9 @@ void displayPeople(std::vector<Person> listOfPeople, string personType) {
 
   negotiationCount > mediationCount&& negotiationCount > arbitrationCount
       ? prevailingMethod = "negotiation"
-      : mediationCount > negotiationCount&& mediationCount > arbitrationCount
-            ? prevailingMethod = "mediation"
-            : prevailingMethod = "arbitration";
+  : mediationCount > negotiationCount&& mediationCount > arbitrationCount
+      ? prevailingMethod = "mediation"
+      : prevailingMethod = "arbitration";
 
   std::cout << "Prevailing Method: " << prevailingMethod << std::endl;
 }
@@ -115,17 +114,16 @@ string prevailingMethod(std::vector<Person> listOfPeople) {
   std::vector<Person>::iterator it;
   for (it = listOfPeople.begin(); it != listOfPeople.end(); ++it) {
     method = it->getMethod();
-    method == "negotiation"
-        ? ++negotiationCount
-        : method == "arbitration" ? ++arbitrationCount : ++mediationCount;
+    method == "negotiation"   ? ++negotiationCount
+    : method == "arbitration" ? ++arbitrationCount
+                              : ++mediationCount;
   }
 
   negotiationCount > mediationCount&& negotiationCount > arbitrationCount
       ? prevailingMethod = "negotiation"
-      : mediationCount > negotiationCount&& mediationCount > arbitrationCount
-            ? prevailingMethod = "mediation"
-            : prevailingMethod = "arbitration";
+  : mediationCount > negotiationCount&& mediationCount > arbitrationCount
+      ? prevailingMethod = "mediation"
+      : prevailingMethod = "arbitration";
 
   return prevailingMethod;
 }
-
