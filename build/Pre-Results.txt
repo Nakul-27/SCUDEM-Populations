@@ -1,300 +1,300 @@
-mediation
-mediation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: arbitration
  
-mediation
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-arbitration
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: negotiation
  
-arbitration
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: negotiation
  
-arbitration
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-arbitration
-mediation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: arbitration
  
-mediation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-arbitration
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-arbitration
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-arbitration
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: mediation
  
-arbitration
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-arbitration
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-mediation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-arbitration
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-arbitration
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-arbitration
-negotiation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-mediation
-mediation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: arbitration
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: negotiation
  
-negotiation
-mediation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-arbitration
-negotiation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: negotiation
  
-arbitration
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: negotiation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-mediation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-mediation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-arbitration
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-arbitration
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-negotiation
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-mediation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-mediation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-arbitration
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-mediation
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-mediation
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-mediation
-mediation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: mediation
  
-mediation
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-arbitration
-negotiation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: arbitration
  
-arbitration
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: mediation
  
-mediation
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: negotiation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-arbitration
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: mediation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-negotiation
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: mediation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: negotiation
  
-arbitration
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-arbitration
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: negotiation
  
-arbitration
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-arbitration
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-arbitration
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: mediation
  
-arbitration
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-negotiation
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-arbitration
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-arbitration
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-mediation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-arbitration
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: negotiation
  
-mediation
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-mediation
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: mediation
  
-mediation
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-arbitration
-mediation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: arbitration
  
-arbitration
-mediation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: negotiation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-mediation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: mediation
  
-arbitration
-negotiation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: arbitration
  
-arbitration
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-negotiation
-mediation
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: arbitration
  
-arbitration
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-negotiation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-mediation
-mediation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-mediation
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-negotiation
-mediation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-arbitration
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-arbitration
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: mediation
  
-arbitration
-arbitration
+Immigrant Prevailing Method: mediation
+Ugandan Prevailing Method: arbitration
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-arbitration
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-negotiation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: mediation
  
-arbitration
-mediation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: mediation
  
-negotiation
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  
-arbitration
-negotiation
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: arbitration
  
-mediation
-negotiation
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-negotiation
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: arbitration
  
-arbitration
-arbitration
+Immigrant Prevailing Method: arbitration
+Ugandan Prevailing Method: negotiation
  
-negotiation
-arbitration
+Immigrant Prevailing Method: negotiation
+Ugandan Prevailing Method: negotiation
  

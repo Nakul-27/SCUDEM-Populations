@@ -18,6 +18,7 @@ class Person {
   string getGender(void);
   string getSocialClass(void);
   int getAge(void);
+  int getFitness();
   float getInteractionProb(void);
 
   // Set Methods

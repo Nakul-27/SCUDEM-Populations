@@ -36,6 +36,27 @@ void Person::Display() {
   printf("Interaction Probability %.2f", getInteractionProb());
 }
 
+int Person::getFitness() {
+  // Factors to influence are Age, Gender, Interaction Probability
+  // Max = 7, Min = 1
+  int fitness = 0;
+  float interactionProb = getInteractionProb();
+  int age = getAge();
+
+  // Rationale for Gender: Heavily Patriarchical Society
+  getGender() == "male" ? fitness += 3 : fitness += 1;
+  // Rationale for Interaction Prob: Most influential should get 2 points
+  interactionProb >= 0.75                             ? fitness += 2
+  : interactionProb >= 0.25 && interactionProb < 0.75 ? fitness += 1
+                                                      : fitness += 0;
+  // Rationale for Age: Those older are wiser and therefore have more influence
+  age >= 50               ? fitness += 2
+  : age >= 32 && age < 50 ? fitness += 1
+                          : fitness += 0;
+
+  return fitness;
+}
+
 // Constructor
 Person::Person(std::string newClassification, std::string newMethod,
                std::string newGender, std ::string newSocialClass, int newAge,
