@@ -63,7 +63,7 @@
 // gsl_rng* r;
 
 void simulation(std::ofstream& file, int numImmigrants, int numUgandans,
-                int numTimes, int numInteractions) {
+                int numTimes, int numInteractions, int numIntForPopInc) {
   unsigned int seed = 0;
   std::random_device rd;
   std::mt19937 gen(rd());
@@ -71,21 +71,12 @@ void simulation(std::ofstream& file, int numImmigrants, int numUgandans,
 
   seed = dis(gen);
 
-  // const gsl_rng_type* T;
-  // gsl_rng_env_setup();
-
-  // T = gsl_rng_default;
-  // r = gsl_rng_alloc(T);
-
-  // for (auto i = 0; i < 150; ++i) {
-  //   printf("%lu \n", gsl_rng_get(r) % 100 / 5);
-  // }
-
   file.open("Pre-Results.txt");
 
   // Number of Immigrants and Ugandans
   int immigrantNumber = numImmigrants;
   int ugandanNumber = numUgandans;
+  int numIntLeftForPopInc;
 
   std::vector<Person> listOfImmigrants;
   std::vector<Person> listOfUgandans;
@@ -94,6 +85,8 @@ void simulation(std::ofstream& file, int numImmigrants, int numUgandans,
   for (int i = 0; i < numTimes; ++i) {
     // Generates a new RNG seed each time a new population is created
     srand(seed);
+
+    numIntForPopInc = 0;
 
     // Generate Vectors of Immigrants and Ugandans
     listOfImmigrants = generatePeople(immigrantNumber, "Immigrant");
@@ -116,8 +109,10 @@ void simulation(std::ofstream& file, int numImmigrants, int numUgandans,
 
       // Cannot make var for rand() % Combined.size() because need to generate
       // new Random Number for each index.
+      //
       // Do not need to check if the indexes are the same because of how large
       // Combined.size() is and will be.
+      //
       if (person1.getFitness() > person2.getFitness()) {
         person2.setMethod(person1.getMethod());
         std::cout << person2.getMethod() << std::endl;
@@ -142,20 +137,11 @@ void simulation(std::ofstream& file, int numImmigrants, int numUgandans,
 int main(int argc, char** argv) {
   std::ofstream file;
 
-  simulation(file, 100, 1000, 100, 500);
-
-  // CHANGES THE METHOD
-  // // for (int index = 0; index < listOfImmigrants.size(); ++index) {
-  // //   std::cout << listOfImmigrants.at(index).getMethod() << std::endl;
-  // // }
-
-  // // for (int index = 0; index < listOfImmigrants.size(); ++index) {
-  // //   listOfImmigrants.at(index).setMethod("arbitration");
-  // // }
-
-  // // for (int index = 0; index < listOfImmigrants.size(); ++index) {
-  // //   std::cout << listOfImmigrants.at(index).getMethod() << std::endl;
-  // // }
+  // Parameters
+  // File, Number of Immigrants, Number of Ugandans, Number of Time the
+  // Simulation should Run, Number of Interactions per Simulation, Number of
+  // Interactions for Population Increase
+  simulation(file, 100, 1000, 100, 500, 50);
 
   return 0;
 }

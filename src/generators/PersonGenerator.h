@@ -16,9 +16,9 @@
 
 using std::string;
 
-string getTechnique(std::string methods[3]);
-string getGender(std::string genders[2]);
-string getSocialClass(std::string socialClasses[3]);
+string getTechnique(string classification);
+string getGender();
+string getSocialClass();
 int getAge();
 float getProb();
 

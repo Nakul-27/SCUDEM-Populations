@@ -16,19 +16,52 @@ using std::string;
 
 // TODO: NEED TO GENERATE FITNESS SCORE AND CREATE A get METHOD FOR IT.
 
-string getTechnique(std::string methods[3]) {
-  int index = setup(3);
+string getTechnique(string classification) {
+  unsigned int seed = 0;
+  std::random_device rd;
+  std::mt19937 gen(rd());
+  std::uniform_int_distribution<> dis(1, 9999);
 
-  return methods[index];
+  seed = dis(gen);
+
+  string method;
+  // 60% Mediation, 30% Negotiation, 10% Arbitration
+  string immigrantMethods[10] = {
+      "negotiation", "negotiation", "negotiation", "arbitration", "mediation",
+      "mediation",   "mediation",   "mediation",   "mediation",   "mediation",
+  };
+  // 70% Arbitration, 20% Negotiation, 10% Mediation
+  string ugandanMethods[10] = {
+      "negotiation", "negotiation", "arbitration", "arbitration", "arbitration",
+      "arbitration", "arbitration", "arbitration", "arbitration", "mediation",
+  };
+  int index = setup(10);
+
+  shuffle(immigrantMethods->begin(), immigrantMethods->end(),
+          std::default_random_engine(seed));
+  shuffle(ugandanMethods->begin(), ugandanMethods->end(),
+          std::default_random_engine(seed));
+
+  // Not a good technique but I couldn't think of another way to do this.
+  if (classification == "Immigrant") {
+    method = immigrantMethods[index];
+  } else {
+    method = ugandanMethods[index];
+  }
+  return method;
 }
 
-string getGender(std::string gender[2]) {
+string getGender() {
+  string genders[2] = {"male", "female"};
+
   int index = setup(2);
 
-  return gender[index];
+  return genders[index];
 }
 
-string getSocialClass(std::string socialClasses[3]) {
+string getSocialClass() {
+  string socialClasses[3] = {"lower", "middle", "upper"};
+
   int index = setup(3);
 
   return socialClasses[index];
@@ -53,15 +86,12 @@ std::vector<Person> generatePeople(int num, string classification) {
 
   seed = dis(gen);
 
-  string methods[3] = {"negotiation", "arbitration", "mediation"};
-  string genders[2] = {"male", "female"};
-  string socialClasses[3] = {"lower", "middle", "upper"};
   // seed = (unsigned int)time(NULL);
 
   for (int i = 0; i < num; ++i) {
-    std::string method = getTechnique(methods);
-    std::string gender = getGender(genders);
-    std::string socialClass = getSocialClass(socialClasses);
+    std::string method = getTechnique(classification);
+    std::string gender = getGender();
+    std::string socialClass = getSocialClass();
     int age = getAge();
     float interactionProb = getProb();
 
