@@ -38,8 +38,6 @@
 // Date of Last Edit: 29 OCT 2020
 //
 
-#include <gsl/gsl_rng.h>
-#include <gsl/gsl_sf_bessel.h>
 #include <stdio.h>
 #include <unistd.h>
 
@@ -47,7 +45,6 @@
 #include <cstdlib>
 #include <fstream>
 #include <functional>
-#include <fwdpp/diploid.hh>
 #include <iostream>
 #include <random>
 #include <string>
