@@ -80,12 +80,12 @@ void simulation(std::ofstream& file, std::ofstream& file2, int numImmigrants,
     listOfImmigrants.clear();
     listOfUgandans.clear();
 
-    file << "Immigrant Prevailing Method: " << method
-         << "\nUgandan Prevailing Method: " << method2 << "\n \n ";
+    file << "Iteration " << i << "\n"
+         << "Immigrant Prevailing Method: " << method
+         << "\nUgandan Prevailing Method: " << method2 << "\n \n";
 
     for (int i = 0; i < numInteractions; ++i) {
       if ((rand() % 100 / 10) >= 9) {
-        // std::cout << int(immigrantNumber * 0.03) << std::endl;
         // Generate a random number of immigrants between 0 and
         // 100 and insert them into the combined list.
         newListofImmigrants =
@@ -97,9 +97,6 @@ void simulation(std::ofstream& file, std::ofstream& file2, int numImmigrants,
         // Clear the new List after all of the members have been
         // generated and added.
         newListofImmigrants.clear();
-
-        // Combined.insert(Combined.end(), newListofImmigrants.begin(),
-        //               newListofImmigrants.end());
 
         // Shuffle the combined list
         std::shuffle(std::begin(Combined), std::end(Combined),
@@ -142,7 +139,8 @@ void simulation(std::ofstream& file, std::ofstream& file2, int numImmigrants,
     method = prevailingMethod(listOfImmigrants);
     method2 = prevailingMethod(listOfUgandans);
 
-    file2 << "Immigrant Prevailing Method: " << method
+    file2 << "Iteration " << i << "\n"
+          << "Immigrant Prevailing Method: " << method
           << "\nUgandan Prevailing Method: " << method2 << "\n \n";
 
     listOfImmigrants.clear();

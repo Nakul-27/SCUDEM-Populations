@@ -14,8 +14,6 @@
 
 using std::string;
 
-// TODO: NEED TO GENERATE FITNESS SCORE AND CREATE A get METHOD FOR IT.
-
 string getTechnique(string classification) {
   unsigned int seed = 0;
   std::random_device rd;
@@ -100,13 +98,10 @@ void displayPeople(std::vector<Person> listOfPeople, string personType) {
   int mediationCount = 0;
 
   for (auto it = listOfPeople.begin(); it != listOfPeople.end(); ++it) {
-    // std::cout << personType << " number " << count << std::endl;
     method = it->getMethod();
-    // it->Display();
     method == "negotiation"   ? ++negotiationCount
     : method == "arbitration" ? ++arbitrationCount
                               : ++mediationCount;
-    // std::cout << "" << std::endl << std::endl;
     ++count;
   }
 
@@ -137,28 +132,6 @@ string prevailingMethod(std::vector<Person> listOfPeople) {
     : method == "arbitration" ? ++arbitrationCount
                               : ++mediationCount;
   }
-
-  // if (negotiationCount > mediationCount &&
-  //     negotiationCount > arbitrationCount) {
-  //   if (mediationCount > arbitrationCount) {
-  //     prevailingMethod = "negotiation, mediation, arbitration";
-  //   } else {
-  //     prevailingMethod = "negotiation, arbitration, mediation";
-  //   }
-  // } else if (mediationCount > negotiationCount &&
-  //            mediationCount > arbitrationCount) {
-  //   if (negotiationCount > arbitrationCount) {
-  //     prevailingMethod = "mediation, negotiation, arbitration";
-  //   } else {
-  //     prevailingMethod = "mediation, arbitration, negotiation";
-  //   }
-  // } else {
-  //   if (mediationCount > negotiationCount) {
-  //     prevailingMethod = "arbitration, mediation, negotiation";
-  //   } else {
-  //     prevailingMethod = "arbitration, negotiation, mediation";
-  //   }
-  // }
 
   negotiationCount > mediationCount&& negotiationCount > arbitrationCount
       ? prevailingMethod = "negotiation"
