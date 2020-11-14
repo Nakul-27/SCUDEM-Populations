@@ -16,7 +16,6 @@
 #include <algorithm>
 #include <cstdlib>
 #include <fstream>
-#include <functional>
 #include <iostream>
 #include <iterator>
 #include <random>

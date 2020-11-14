@@ -43,8 +43,6 @@ cstdlib
 -
 fstream
 -
-functional
--
 iostream
 -
 iterator
