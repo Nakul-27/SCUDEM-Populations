@@ -6,8 +6,8 @@
 // 2) LIMITING POPULATION GROWTH - MORE PEOPLE COMING IN
 //
 // SCUDEM Main Implementation
-// By: RAO, Nakul S
-// Date of Last Edit: 29 OCT 2020
+// By: RAO, Nakul S; WOOD, Ethan
+// Date of Last Edit: 14 NOV 2020
 //
 
 #include <stdio.h>

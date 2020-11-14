@@ -1,6 +1,6 @@
 //
 // Immigrant Generator Interface
-// By: RAO, Nakul S
+// By: RAO, Nakul S; WOOD, Ethan
 // Date of Last Edit: 29 OCT 2020
 //
 

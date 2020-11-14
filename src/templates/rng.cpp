@@ -1,7 +1,8 @@
 //
 // Random Number Generator
-// By: RAO, Nakul S
+// By: RAO, Nakul S; WOOD, ETHAN
 // Date of Last Edit: 29 OCT 2020
+//
 // Reference and Credit:
 // https://blog.demofox.org/2013/07/07/a-super-tiny-random-number-generator/
 //

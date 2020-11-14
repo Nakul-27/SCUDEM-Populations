@@ -1,7 +1,7 @@
 //
 // Immigrant Generator Implementation
-// By: RAO, Nakul S
-// Date of Last Edit: 29 OCT 2020
+// By: RAO, Nakul S; WOOD, Ethan
+// Date of Last Edit: 14 NOV 2020
 //
 #include "PersonGenerator.h"
 
