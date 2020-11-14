@@ -18,7 +18,6 @@ using std::string;
 
 string getTechnique(string classification);
 string getGender();
-string getSocialClass();
 int getAge();
 float getProb();
 

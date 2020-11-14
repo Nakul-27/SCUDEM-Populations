@@ -6,18 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/PersonGenerator.cpp
-PersonGenerator.h
-/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/PersonGenerator.h
-cstdlib
--
-random
--
-../models/parent/person.h
-/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/parent/person.h
-../templates/rng.cpp
-/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/templates/rng.cpp
-
 /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/generators/PersonGenerator.h
 iostream
 -
@@ -45,6 +33,8 @@ functional
 -
 iostream
 -
+iterator
+-
 random
 -
 string
@@ -58,17 +48,5 @@ models/parent/person.h
 
 /Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/models/parent/person.h
 string
--
-
-/Users/nakul_rao/iCloud Drive (Archive)/Desktop/Dev/SCUDEM/src/templates/rng.cpp
-math.h
--
-string.h
--
-cstdlib
--
-cstring
--
-iostream
 -
 

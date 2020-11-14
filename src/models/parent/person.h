@@ -16,7 +16,6 @@ class Person {
   string getClassification(void);
   string getMethod(void);
   string getGender(void);
-  string getSocialClass(void);
   int getAge(void);
   int getFitness();
   float getInteractionProb(void);
@@ -24,13 +23,12 @@ class Person {
   // Set Methods
   void setMethod(std::string m);
   void setGender(std::string g);
-  void setSocialClass(std::string sC);
   void setAge(int a);
   void setInteractionProb(float iP);
 
   // Non-Default Constructor
   Person(std::string classification, std::string method, std::string gender,
-         std::string socialClass, int age, float interactionProb);
+         int age, float interactionProb);
 
   // Immigrant();
   ~Person();
@@ -41,7 +39,6 @@ class Person {
   std::string classification;
   std::string method;
   std::string gender;
-  std::string socialClass;
   int age;
   float interactionProb;
 };

@@ -3,9 +3,9 @@
 // By: RAO, Nakul S
 // Date of Last Edit: 29 OCT 2020
 //
-
 #include "PersonGenerator.h"
 
+#include <array>
 #include <cstdlib>
 #include <random>
 
@@ -25,22 +25,23 @@ string getTechnique(string classification) {
   seed = dis(gen);
 
   string method;
-  // 60% Mediation, 30% Negotiation, 10% Arbitration
-  string immigrantMethods[10] = {
-      "negotiation", "negotiation", "negotiation", "arbitration", "mediation",
-      "mediation",   "mediation",   "mediation",   "mediation",   "mediation",
+  // 40% Mediation, 30% Negotiation, 30% Arbitration
+  std::array<string, 10> immigrantMethods{
+      "negotiation", "negotiation", "negotiation", "arbitration", "arbitration",
+      "arbitration", "mediation",   "mediation",   "mediation",   "mediation",
   };
-  // 70% Arbitration, 20% Negotiation, 10% Mediation
-  string ugandanMethods[10] = {
-      "negotiation", "negotiation", "arbitration", "arbitration", "arbitration",
-      "arbitration", "arbitration", "arbitration", "arbitration", "mediation",
+  // 40% Arbitration, 30% Negotiation, 30% Mediation
+  std::array<string, 10> ugandanMethods{
+      "negotiation", "negotiation", "negotiation", "arbitration", "arbitration",
+      "arbitration", "arbitration", "mediation",   "mediation",   "mediation",
   };
   int index = setup(10);
 
-  shuffle(immigrantMethods->begin(), immigrantMethods->end(),
-          std::default_random_engine(seed));
-  shuffle(ugandanMethods->begin(), ugandanMethods->end(),
-          std::default_random_engine(seed));
+  std::shuffle(immigrantMethods.begin(), immigrantMethods.end(),
+               std::default_random_engine(seed));
+
+  std::shuffle(ugandanMethods.begin(), ugandanMethods.end(),
+               std::default_random_engine(seed));
 
   // Not a good technique but I couldn't think of another way to do this.
   if (classification == "Immigrant") {
@@ -57,14 +58,6 @@ string getGender() {
   int index = setup(2);
 
   return genders[index];
-}
-
-string getSocialClass() {
-  string socialClasses[3] = {"lower", "middle", "upper"};
-
-  int index = setup(3);
-
-  return socialClasses[index];
 }
 
 int getAge() {
@@ -86,17 +79,13 @@ std::vector<Person> generatePeople(int num, string classification) {
 
   seed = dis(gen);
 
-  // seed = (unsigned int)time(NULL);
-
   for (int i = 0; i < num; ++i) {
     std::string method = getTechnique(classification);
     std::string gender = getGender();
-    std::string socialClass = getSocialClass();
     int age = getAge();
     float interactionProb = getProb();
 
-    loP.push_back(Person(classification, method, gender, socialClass, age,
-                         interactionProb));
+    loP.push_back(Person(classification, method, gender, age, interactionProb));
   }
 
   return loP;
@@ -111,13 +100,13 @@ void displayPeople(std::vector<Person> listOfPeople, string personType) {
   int mediationCount = 0;
 
   for (auto it = listOfPeople.begin(); it != listOfPeople.end(); ++it) {
-    std::cout << personType << " number " << count << std::endl;
+    // std::cout << personType << " number " << count << std::endl;
     method = it->getMethod();
-    it->Display();
+    // it->Display();
     method == "negotiation"   ? ++negotiationCount
     : method == "arbitration" ? ++arbitrationCount
                               : ++mediationCount;
-    std::cout << "" << std::endl << std::endl;
+    // std::cout << "" << std::endl << std::endl;
     ++count;
   }
 
@@ -148,6 +137,28 @@ string prevailingMethod(std::vector<Person> listOfPeople) {
     : method == "arbitration" ? ++arbitrationCount
                               : ++mediationCount;
   }
+
+  // if (negotiationCount > mediationCount &&
+  //     negotiationCount > arbitrationCount) {
+  //   if (mediationCount > arbitrationCount) {
+  //     prevailingMethod = "negotiation, mediation, arbitration";
+  //   } else {
+  //     prevailingMethod = "negotiation, arbitration, mediation";
+  //   }
+  // } else if (mediationCount > negotiationCount &&
+  //            mediationCount > arbitrationCount) {
+  //   if (negotiationCount > arbitrationCount) {
+  //     prevailingMethod = "mediation, negotiation, arbitration";
+  //   } else {
+  //     prevailingMethod = "mediation, arbitration, negotiation";
+  //   }
+  // } else {
+  //   if (mediationCount > negotiationCount) {
+  //     prevailingMethod = "arbitration, mediation, negotiation";
+  //   } else {
+  //     prevailingMethod = "arbitration, negotiation, mediation";
+  //   }
+  // }
 
   negotiationCount > mediationCount&& negotiationCount > arbitrationCount
       ? prevailingMethod = "negotiation"
